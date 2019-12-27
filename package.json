@@ -14,10 +14,7 @@
   "homepage": "https://github.com/strongloop/loopback-component-passport",
   "version": "3.11.0",
   "maintainers": [
-    {
-      "name": "Raymond Feng",
-      "email": "raymond@strongloop.com"
-    }
+    "Raymond Feng <raymond@strongloop.com>"
   ],
   "bugs": {
     "url": "https://github.com/strongloop/loopback-component-passport/issues"
@@ -43,10 +40,14 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "./node_modules/.bin/mocha -R spec --timeout 10000 test/*.js",
+    "test": "mocha -R spec --timeout 10000 test/*.js",
     "posttest": "npm run lint"
   },
   "main": "./lib/index.js",
   "license": "Artistic-2.0",
-  "author": "IBM Corp."
+  "author": "IBM Corp.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
